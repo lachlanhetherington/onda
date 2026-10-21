@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | ONDA Group</title>
+  <meta name="description" content="If you would like to find out more information about ONDA and our unique services, please provide some details of your enquiry and one of our team will contact you shortly.">
+  <meta name="theme-color" content="#011c6c">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23011c6c'/%3E%3Ccircle cx='16' cy='16' r='8' fill='none' stroke='%23d5bc67' stroke-width='4'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/contact-hero.webp">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body data-page="contact">
+  <a class="skip-link" href="#site-content">Skip to the content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="ONDA Group home">
+        <img src="assets/img/logo-white.webp" alt="ONDA" width="136" height="35">
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="about-onda.html" data-nav="about">ABOUT ONDA</a>
+        <a href="what-we-do.html" data-nav="what">WHAT WE DO</a>
+        <a href="faq.html" data-nav="faq">FAQ</a>
+        <a class="nav-cta" href="contact.html" data-nav="contact">CONTACT US
+          <svg viewBox="0 0 22 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M0 6h20M15 1l5 5-5 5"/></svg>
+        </a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <a href="about-onda.html" data-nav="about">ABOUT ONDA</a>
+    <a href="what-we-do.html" data-nav="what">WHAT WE DO</a>
+    <a href="faq.html" data-nav="faq">FAQ</a>
+    <a class="is-cta" href="contact.html" data-nav="contact">CONTACT US</a>
+  </div>
+
+  <main id="site-content">
+
+    <!-- HERO -->
+    <section class="hero hero--page" aria-labelledby="hero-title">
+      <div class="hero__media" style="background-image:url('assets/img/contact-hero.webp');background-position:center 60%" role="img" aria-label="Swirling white sand and turquoise water at the Whitsunday Islands"></div>
+      <div class="container">
+        <div>
+          <div class="rule hero__rule"></div>
+          <h1 id="hero-title">
+            <span class="line"><span>Let’s Connect</span></span>
+          </h1>
+        </div>
+        <p class="location hero__loc">
+          <svg viewBox="0 0 22 30" fill="currentColor" aria-hidden="true"><path d="M11 0C4.9 0 0 4.9 0 11c0 8.2 11 19 11 19s11-10.8 11-19C22 4.9 17.1 0 11 0zm0 15.2a4.2 4.2 0 1 1 0-8.4 4.2 4.2 0 0 1 0 8.4z"/></svg>
+          <span>Whitsunday Islands,<br>Ngaro Country,<br>Queensland</span>
+        </p>
+      </div>
+      <div class="scroll-cue" aria-hidden="true"></div>
+    </section>
+
+    <!-- FORM -->
+    <section class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="rule" data-rule style="margin-bottom:28px"></div>
+        <div class="contact__grid">
+          <div class="contact__intro">
+            <h2 id="contact-title" class="visually-hidden">Send us your enquiry</h2>
+            <p data-reveal>If you would like to find out more information about ONDA and our unique services, please provide some details of your enquiry and one of our team will contact you shortly.</p>
+            <ul class="contact__points">
+              <li data-stagger><img src="assets/img/ic-australian.webp" alt="" width="52" height="52" loading="lazy">Australian Owned &amp; Operated</li>
+              <li data-stagger><img src="assets/img/ic-secure.webp" alt="" width="52" height="52" loading="lazy">Secure &amp; Trusted</li>
+              <li data-stagger><img src="assets/img/ic-geographies.webp" alt="" width="52" height="52" loading="lazy">All Geographies &amp; Currencies</li>
+            </ul>
+          </div>
+
+          <!-- data-endpoint: set to the form handler URL (e.g. WordPress / Formspree) before going live -->
+          <form class="form" id="contact-form" data-endpoint="" novalidate data-reveal>
+            <div class="field">
+              <input id="f-name" name="full_name" type="text" autocomplete="name" required aria-describedby="f-name-err">
+              <label for="f-name">Full Name*</label>
+              <span class="field__line" aria-hidden="true"></span>
+              <span class="field__error" id="f-name-err" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <input id="f-email" name="email" type="email" autocomplete="email" required aria-describedby="f-email-err">
+              <label for="f-email">Email*</label>
+              <span class="field__line" aria-hidden="true"></span>
+              <span class="field__error" id="f-email-err" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required aria-describedby="f-phone-err">
+              <label for="f-phone">Phone*</label>
+              <span class="field__line" aria-hidden="true"></span>
+              <span class="field__error" id="f-phone-err" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <textarea id="f-message" name="message" rows="4" required aria-describedby="f-message-err"></textarea>
+              <label for="f-message">Your message*</label>
+              <span class="field__line" aria-hidden="true"></span>
+              <span class="field__error" id="f-message-err" aria-live="polite"></span>
+            </div>
+            <div class="form__foot">
+              <span class="form__note">* Required</span>
+              <button class="btn" type="submit"><span>SUBMIT FORM</span><span class="btn__spinner" aria-hidden="true"></span>
+                <svg viewBox="0 0 22 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M0 6h20M15 1l5 5-5 5"/></svg>
+              </button>
+            </div>
+            <p class="form__status" role="status" tabindex="-1"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="quotes" aria-roledescription="carousel" aria-label="Client testimonials">
+      <div class="quotes__media" data-parallax="12" style="background-image:url('assets/img/narrandera.webp')" aria-hidden="true"></div>
+      <div class="container">
+        <div class="quotes__viewport">
+          <figure class="quote is-active" aria-roledescription="slide" aria-label="1 of 3">
+            <p class="eyebrow">CLIENT TESTIMONIAL</p>
+            <blockquote>“Partnering with ONDA has transformed the way we can manage and analyse our private assets”</blockquote>
+          </figure>
+          <figure class="quote" aria-roledescription="slide" aria-label="2 of 3">
+            <p class="eyebrow">CLIENT TESTIMONIAL</p>
+            <blockquote>“ONDA Could not be more responsive, an essential part of our family office infrastructure”</blockquote>
+          </figure>
+          <figure class="quote" aria-roledescription="slide" aria-label="3 of 3">
+            <p class="eyebrow">CLIENT TESTIMONIAL</p>
+            <blockquote>“Moving to ONDA has been one of our best investment decisions”</blockquote>
+          </figure>
+        </div>
+        <div class="quotes__controls">
+          <button class="arrow" type="button" data-dir="-1" aria-label="Previous testimonial">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="16" cy="16" r="15"/><path d="M23 16H9m5-5-5 5 5 5"/></svg>
+          </button>
+          <div class="dots" role="group" aria-label="Choose testimonial"></div>
+          <button class="arrow" type="button" data-dir="1" aria-label="Next testimonial">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="16" cy="16" r="15"/><path d="M9 16h14m-5-5 5 5-5 5"/></svg>
+          </button>
+          <div class="quotes__progress" aria-hidden="true"><i></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA + FOOTER -->
+    <div class="closing closing--pale">
+      <div class="closing__media" data-parallax="10" style="background-image:url('assets/img/contact-closing.webp')" aria-hidden="true"></div>
+      <div class="container">
+        <section class="cta" aria-label="Contact ONDA">
+          <div data-reveal>
+            <p>Why settle for investment reporting that was built for the masses, when you can have a service that is designed just for you?</p>
+            <a class="link-arrow link-arrow--gold" href="#contact-form">CONTACT US
+              <svg viewBox="0 0 22 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M0 6h20M15 1l5 5-5 5"/></svg>
+            </a>
+          </div>
+          <p class="location">
+            <svg viewBox="0 0 22 30" fill="currentColor" aria-hidden="true"><path d="M11 0C4.9 0 0 4.9 0 11c0 8.2 11 19 11 19s11-10.8 11-19C22 4.9 17.1 0 11 0zm0 15.2a4.2 4.2 0 1 1 0-8.4 4.2 4.2 0 0 1 0 8.4z"/></svg>
+            <span>Point Lonsdale (Gowayn),<br>Wadawurrung Country,<br>Victoria</span>
+          </p>
+        </section>
+        <footer class="footer">
+          <div class="footer__top">
+            <img class="footer__logo" src="assets/img/logo-white.webp" alt="ONDA" width="250" height="65" loading="lazy">
+            <div>
+              <p class="footer__tag">UNIQUE | SECURE | TRUSTED</p>
+              <p class="footer__slogan">Family Office Investment Reporting Reimagined</p>
+            </div>
+            <nav class="footer__nav" aria-label="Footer">
+              <a href="index.html">HOME</a>
+              <a href="about-onda.html" data-nav="about">ABOUT ONDA</a>
+              <a href="what-we-do.html" data-nav="what">WHAT WE DO</a>
+              <a href="faq.html" data-nav="faq">FAQ</a>
+              <a href="contact.html" data-nav="contact">CONTACT US</a>
+              <a class="footer__social" href="https://www.linkedin.com/company/onda-group" aria-label="ONDA Group on LinkedIn" rel="noopener" target="_blank">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3v-11zm6.5 0h3.8v1.5h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1v5.46h-4v-4.84c0-1.16-.02-2.64-1.61-2.64-1.61 0-1.86 1.26-1.86 2.56v4.92h-4v-11z"/></svg>
+              </a>
+            </nav>
+          </div>
+          <div class="footer__bottom">
+            <p>Copyright © 2025–present ONDA Group. All rights reserved.</p>
+            <p>In the spirit of reconciliation, we acknowledge the Traditional Custodians of country throughout Australia.</p>
+            <p>Read our <a href="https://ondagroup.com.au/financial-disclaimer/">Financial Disclaimer</a> and <a href="https://ondagroup.com.au/privacy-policy/">Privacy Policy</a></p>
+            <p><a href="https://ondagroup.com.au/sitemap.xml">Sitemap</a></p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
